@@ -18,8 +18,6 @@ x = true;
 console.log('3: ' + (+x));
 console.log('4: ' + x);
 
-
-// 불리언 -> 숫자
 x = false;
 console.log('5: ' + (+x));
 console.log('6: ' + x);
@@ -29,3 +27,10 @@ console.log('6: ' + x);
 x = 'Hello';
 console.log('7: ' + (+x));
 console.log('8: ' + x);
+
+
+// 부호 반전
+console.log(-(-10));
+console.log(-'10');
+console.log(-true);
+console.log(-'Hello');
