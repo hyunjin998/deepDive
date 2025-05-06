@@ -28,5 +28,5 @@ typeof 연산자로 null 값을 연산해 보면 "null"이 아닌 "object"를 �
 
 var foo = null;
 
-console.log(typeof foo === null);
-console.log(foo === null);
+console.log('13: ' + (typeof foo === null));
+console.log('14: ' + (foo === null));
