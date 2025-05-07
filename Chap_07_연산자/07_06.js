@@ -30,7 +30,7 @@ console.log('8: ' + x);
 
 
 // 부호 반전
-console.log(-(-10));
-console.log(-'10');
-console.log(-true);
-console.log(-'Hello');
+console.log('9: ' + (-(-10)));
+console.log('10: ' + (-'10'));
+console.log('11: ' + (-true));
+console.log('12: ' + (-'Hello'));

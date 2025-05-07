@@ -30,13 +30,13 @@ function getStringLength(str) {
     return str.length;
 }
 
-getStringLength();
-getStringLength('hi');
+console.log(getStringLength());
+console.log(getStringLength('hi'));
 
 // ES6의 매개변수의 기본값 설정
 function getStringLength(str = ''){
     return str.length;
 }
 
-getStringLength();
-getStringLength('hi');
+console.log(getStringLength());
+console.log(getStringLength('hi'));
