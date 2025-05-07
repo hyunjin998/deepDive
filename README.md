@@ -1,2 +1,2 @@
 # deepDive
-javascript 연습
+javascript 공부
