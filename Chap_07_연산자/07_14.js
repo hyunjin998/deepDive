@@ -17,3 +17,7 @@ console.log('3: ' + (NaN === NaN));
 console.log('4: ' + isNaN(NaN));
 console.log('5: ' + isNaN(10));
 console.log('6: ' + isNaN(1 + undefined));
+
+// 양의 0과 음의 0 비교. 일치 비교/동등 비교 모두 결과는 true
+console.log('7: ' + (0 === -0));
+console.log('8: ' + (0 == -0));

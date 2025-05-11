@@ -1,4 +1,11 @@
-// p.114
+// p.113
+
+if('') console.log('1');
+if(true) console.log('2');
+if(0) console.log('3');
+if('str') console.log('4');  // 비어있지 않은 문자열이기 때문에 출력
+if(null) console.log('5');
+
 
 /*
 자바스크립트 엔진은 불리언 타입이 아닌 값을 Truth 값(참으로 평가되는 값) 또는 Falsy 값(거짓으로 평가되는 값)으로 구분함
