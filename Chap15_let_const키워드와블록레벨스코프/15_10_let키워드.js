@@ -3,6 +3,6 @@
 let foo = 1;
 {
 	// ReferenceError: Cannot access 'foo' before initialization
-	console.log(foo);
+	// console.log(foo);
 	let foo = 2;
 }
