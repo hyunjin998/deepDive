@@ -9,28 +9,28 @@
 var x = '1';
 
 // 문자열 -> 숫자
-console.log('1: ' + (+x));
-console.log('2: ' + x);
+console.log(+x);  // 1
+console.log(x);  // "1"
 
 
 // 불리언 -> 숫자
 x = true;
-console.log('3: ' + (+x));
-console.log('4: ' + x);
+console.log(+x);  // 1
+console.log(x);  // true
 
 x = false;
-console.log('5: ' + (+x));
-console.log('6: ' + x);
+console.log(+x);  // 0
+console.log(x);  // false
 
 
 // 문자열을 숫자로 타입 변환할 수 없으므로 NaN을 반환
 x = 'Hello';
-console.log('7: ' + (+x));
-console.log('8: ' + x);
+console.log(+x);  // NaN
+console.log(x);  // "Hello"
 
 
 // 부호 반전
-console.log('9: ' + (-(-10)));
-console.log('10: ' + (-'10'));
-console.log('11: ' + (-true));
-console.log('12: ' + (-'Hello'));
+console.log(-(-10));  // 10
+console.log(-'10');  // -10
+console.log(-true);  // -1
+console.log(-'Hello');  // NaN

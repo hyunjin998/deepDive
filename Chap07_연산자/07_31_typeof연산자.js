@@ -6,18 +6,18 @@ typeof : "string", "number", "boolean", "undefined", "symbol", "object", "functi
 */
 
 
-console.log('1: ' + (typeof ''));
-console.log('2: ' + typeof 1);
-console.log('3: ' + typeof NaN);
-console.log('4: ' + typeof true);
-console.log('5: ' + typeof undefined);
-console.log('6: ' + typeof Symbol());
-console.log('7: ' + typeof null);
-console.log('8: ' + typeof []);
-console.log('9: ' + typeof {});
-console.log('10: ' + typeof new Date());
-console.log('11: ' + typeof /test/gi);
-console.log('12: ' + typeof function() {});
+console.log(typeof '');  // string
+console.log(typeof 1);  // number
+console.log(typeof NaN);  // number
+console.log(typeof true);  // boolean
+console.log(typeof undefined);  // undefined
+console.log(typeof Symbol());  // symbol
+console.log(typeof null);  // object
+console.log(typeof []);  // object
+console.log(typeof {});  // object
+console.log(typeof new Date());  // object
+console.log(typeof /test/gi);  // object
+console.log(typeof function() {});  // function
 
 
 /*
@@ -28,8 +28,8 @@ typeof 연산자로 null 값을 연산해 보면 "null"이 아닌 "object"를 �
 
 var foo = null;
 
-console.log('13: ' + (typeof foo === null));
-console.log('14: ' + (foo === null));
+console.log(typeof foo === null);  // false
+console.log(foo === null);  // true
 
 
 /* 선언하지 않은 식별자를 typeof 연산자로 연산해 보면 ReferenceError가 발생하지 않고 undefined를 반환함
@@ -37,4 +37,4 @@ console.log('14: ' + (foo === null));
 
 
 // undeclared 식별자를 선언한 적이 없음
-console.log('15: ' + (typeof undeclared));
+console.log(typeof undeclared);  // undefined

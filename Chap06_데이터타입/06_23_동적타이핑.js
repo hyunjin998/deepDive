@@ -1,36 +1,36 @@
 // p.71
 
 var foo;
-console.log('1: ' + typeof foo);
+console.log(typeof foo);  // undefined
 
 
 foo = 3;
-console.log('2: ' + typeof foo);
+console.log(typeof foo);  // number
 
 
 foo = 'Hello';
-console.log('3: ' + typeof foo);
+console.log(typeof foo);  // string
 
 
 foo = true;
-console.log('4: ' + typeof foo);
+console.log(typeof foo);  // boolean
 
 
 foo = null;
-console.log('5: ' + typeof foo);
+console.log(typeof foo);  // object
 
 
 foo = Symbol();
-console.log('6: ' + typeof foo);
+console.log(typeof foo);  // symbol
 
 
 foo = {};
-console.log('7: ' + typeof foo);
+console.log(typeof foo);  // object
 
 
 foo = [];
-console.log('8: ' + typeof foo);
+console.log(typeof foo);  // object
 
 
 foo = function() {};
-console.log('9: ' + typeof foo);
+console.log(typeof foo);  // function

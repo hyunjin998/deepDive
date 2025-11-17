@@ -12,16 +12,16 @@ var x = 5, result;
 
 // 선할당 후증가
 result = x++;
-console.log('1: ' + result, x);
+console.log(result, x);
 
 // 선증가 후할당
 result = ++x;
-console.log('2: ' + result, x);
+console.log(result, x);
 
 // 선할당 후감소
 result = x--;
-console.log('3: ' + result, x);
+console.log(result, x);
 
 // 선감소 후할당
 result = --x;
-console.log('4: ' + result, x);
+console.log(result, x);
