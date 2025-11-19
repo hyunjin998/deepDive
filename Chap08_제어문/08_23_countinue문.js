@@ -7,4 +7,4 @@ var string = 'Hello World.';
 var search = 'l';
 
 const regexp = new RegExp(search, 'g');
-console.log(string.match(regexp).length);
+console.log(string.match(regexp).length);  // 3

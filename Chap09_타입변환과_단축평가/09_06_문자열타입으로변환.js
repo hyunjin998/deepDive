@@ -5,9 +5,9 @@
 // console.log('1: ' + (Symbol() + ''));
 
 // 객체 타입
-console.log('2: ' + (({})) + '');
-console.log('3: ' + (Math + ''));
-console.log('4: ' + ([] + ''));
-console.log('5: ' + ([10, 20] + ''));
-console.log('6: ' + (function(){} + ''));
-console.log('7: ' + (Array + ''));
+console.log((({})) + '');  // "[object Object]"
+console.log((Math + ''));  // "[object Math]"
+console.log(([] + ''));  // ""
+console.log(([10, 20] + ''));  // "10,20"
+console.log((function(){} + ''));  // "function(){}"
+console.log((Array + ''));  // "function Array() { [native code] }"

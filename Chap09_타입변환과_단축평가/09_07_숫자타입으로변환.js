@@ -6,11 +6,11 @@
 */
 
 
-console.log('1: ' + (1 - '1'));
-console.log('2: ' + (1 * '10'));
-console.log('3: ' + (1 / 'one'));
+console.log(1 - '1');
+console.log(1 * '10');
+console.log(1 / 'one');
 
-console.log('4: ' + ('1' > 0));
+console.log('1' > 0);
 
 
 // 문자열 타입
