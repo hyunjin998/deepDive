@@ -6,31 +6,31 @@
 */
 
 
-console.log(1 - '1');
-console.log(1 * '10');
-console.log(1 / 'one');
+console.log(1 - '1');  // 0
+console.log(1 * '10');  // 10
+console.log(1 / 'one');  // NaN
 
-console.log('1' > 0);
+console.log('1' > 0);  // true
 
 
 // 문자열 타입
-console.log('5: ' + (+''));
-console.log('6: ' + (+'0'));
-console.log('7: ' + (+'1'));
-console.log('8: ' + (+'string'));
+console.log(+'');  // 0
+console.log(+'0');  // 0
+console.log(+'1');  // 1
+console.log(+'string');  // NaN
 
 
 // 불리언 타입
-console.log('9: ' + (+true));
-console.log('10: ' + (+false));
+console.log(+true);  // 1
+console.log(+false);  // 0
 
 
 // null 타입
-console.log('11: ' + (+null));
+console.log(+null);  // 0
 
 
 // undefined 타입
-console.log('12: ' + (+undefined));
+console.log(+undefined);  // NaN
 
 
 // 심벌 타입
@@ -39,7 +39,7 @@ console.log('12: ' + (+undefined));
 
 
 // 객체 타입
-console.log('14: ' + (+{}));
-console.log('15: ' + (+[]));
-console.log('16: ' + (+[10, 20]));
-console.log('17: ' + (+(function(){})));
+console.log(+{});  // NaN
+console.log(+[]);  // 0
+console.log(+[10, 20]);  // NaN
+console.log(+(function(){}));  // NaN
