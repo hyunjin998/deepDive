@@ -9,32 +9,32 @@
 
 // 1. String 생성자 함수를 new 연산자 없이 호출
 // 숫자
-console.log('1: ' + String(1));
-console.log('2: ' + String(NaN));
-console.log('3: ' + String(Infinity));
+console.log(String(1));  // 1
+console.log(String(NaN));  // NaN
+console.log(String(Infinity));  // Infinity
 
 // 불리언
-console.log('4: ' + true);
-console.log('5: ' + false);
+console.log(true);  // true
+console.log(false);  // false
 
 
 // 2. Object.prototype.toString 메서드 사용
 // 숫자
-console.log('6: ' + (1).toString());
-console.log('7: ' + (NaN).toString());
-console.log('8: ' + (Infinity).toString());
+console.log((1).toString());  // 1
+console.log((NaN).toString());  // NaN
+console.log((Infinity).toString());  // Infinity
 
 // 불리언
-console.log('9: ' + (true).toString());
-console.log('10: ' + (false).toString());
+console.log((true).toString());  // true
+console.log((false).toString());  // false
 
 
 // 3. 문자열 연결 연산자를 이용
 // 숫자
-console.log('11: ' + (1 + ''));
-console.log('12: ' + (NaN + ''));
-console.log('13: ' + (Infinity + ''));
+console.log(1 + '');  // 1
+console.log(NaN + '');  // NaN
+console.log(Infinity + '');  // Infinity
 
 // 불리언
-console.log('14: ' + (true + ''));
-console.log('15: ' + (false + ''));
+console.log(true + '');  // true
+console.log(false + '');  // false
